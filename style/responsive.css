@@ -1,0 +1,196 @@
+@media screen and (max-width: 1200px) {
+  .home__baner {
+    height: 400px;
+  }
+  .control__prev {
+    left: 0;
+  }
+  .control__next {
+    right: 0;
+  }
+  .home__title {
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .menu {
+    position: absolute;
+    top: 100%;
+    flex-direction: column;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    display: none;
+    overflow: hidden;
+    background-color: var(--app-bg);
+  }
+  .menu--open {
+    display: flex;
+    overflow: visible;
+  }
+  .menu__item {
+    position: relative;
+    margin-left: 0;
+    display: flex;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+  }
+  .menu__item:hover .submenu {
+    top: 0;
+    right: 12rem;
+  }
+  .menu__item:first-child {
+    margin-top: 2rem;
+  }
+  .menu__link {
+    padding: 0 0.5rem;
+    display: flex;
+    color: var(--text-color);
+  }
+  .nav__toggle-icon {
+    display: flex;
+    margin-left: 0;
+  }
+  .home__baner {
+    height: 350px;
+  }
+  .home__title {
+    font-size: 4.5rem;
+  }
+  .shop__title,
+  .collection__title {
+    font-size: 2.2rem;
+  }
+  .shop__caption,
+  .collection__caption {
+    font-size: 1.7rem;
+  }
+  .shop__link,
+  .collection__link {
+    font-size: 1.7rem;
+  }
+  .products__nav__li {
+    margin-bottom: 1rem;
+  }
+
+  .products__title {
+    font-size: 2.8rem;
+  }
+  .products__nav__link {
+    font-size: 1.4rem;
+  }
+
+  .service__box__style {
+    border-left: none;
+  }
+  .footer__bottom__content {
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+  }
+  .filter__wrapper{
+    display: none;
+  }
+  .filter__toggle__link{
+    display: flex;
+   
+  }
+   
+}
+@media screen and (max-width: 768px) {
+  .flexDirection {
+    flex-direction: column-reverse;
+  }
+  .down-symbol {
+    /* position: absolute;
+ right: 53rem;
+   */
+  }
+  .submenu {
+  }
+
+  .home__title {
+    font-size: 3.5rem;
+  }
+  .control__prev,
+  .control__next {
+    display: none;
+  }
+  .season__content {
+    margin: 5rem 0;
+    align-items: center;
+  }
+  .subscribe {
+    padding: 2.5rem;
+  }
+
+  .subscribe__heading {
+    margin-bottom: 1.5rem;
+  }
+
+  .pages__wrapper__list {
+    justify-content: flex-start;
+  }
+  .cart__table {
+    display: none;
+  }
+  .center {
+    justify-content: center;
+  }
+  .table__responsive {
+    width: 100%;
+    display: block;
+  }
+  table tr {
+    border-top: 1px solid #dee2e6;
+    display: flex;
+    justify-content: space-between;
+  }
+  .tbody__responsive {
+    width: 100%;
+    display: block;
+  }
+  .cart__empty__title{
+    font-size: 2rem;
+  }
+  .table__responsive__title {
+    font-family: "Samim bold";
+  }
+  .tr__responsive {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .textAlign {
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .home__title {
+    font-size: 3rem;
+  }
+  .wrapper__nav {
+    flex-direction: column;
+  }
+  .products__nav__li {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 380px) {
+  .home__title {
+    font-size: 3rem;
+  }
+  .app-logo {
+    width: 12rem;
+  }
+  .nav__links {
+    margin-left: 0;
+  }
+  .nav {
+    flex-direction: column;
+  }
+  .season__title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}

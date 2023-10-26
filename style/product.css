@@ -1,0 +1,364 @@
+
+:root {
+  --text-color: #292b2c;
+  --app-bg: #ffffff;
+  --section-bg: #f2f3f5;
+}
+
+.alignItems{
+  display: flex;
+  align-items: center;
+}
+
+.info__color__switch {
+  display: flex;
+}
+
+.product__wrapper {
+  padding: 10rem 0;
+}
+.product__image__wrapper {
+  border: 1px solid #ddd;
+  padding: 6px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+.product__image__wrapper img {
+  width: 100%;
+  cursor: zoom-in;
+}
+.product__slide__wrapper {
+}
+.product__slide {
+  display: flex;
+}
+.slide__img__link {
+  border: 1px solid #ddd;
+  display: flex;
+  padding: 5px;
+}
+.product__related__heading{
+margin-bottom: 3rem;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.related__heading__title{
+font-size: 2.8rem;
+color: var(--text-color);
+font-family: 'Samim bold';
+
+}
+.product__slide__img {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.product__slide__img:first-child {
+  margin-right: 0;
+}
+.product__slide__img:last-child {
+  margin-left: 0;
+}
+.slide__img {
+  width: 100%;
+}
+.product__info__wrap {
+}
+.product__info__cart{
+  border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+}
+.info__title {
+  font-family: "Samim bold";
+  font-size: 2.5rem;
+}
+.info__price {
+margin: 1rem 0;   
+}
+.price {
+    color: #e890ed;
+    font-size: 1.8rem;
+}
+.info__desc {
+  color: #837b81;
+  margin-bottom: 1rem;
+}
+.product__switch__wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.product__switch__lable {
+  margin-left: 2rem;
+}
+.info__color__switch {
+}
+.color__span {
+}
+.color__span--active {
+}
+.product__switch__wrap {
+}
+.product__switch__lable {
+}
+.product__switch__size {
+  display: flex;
+}
+.size__span {
+  display: block;
+    border: 2px solid #ddd;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+.size__span--active{
+  border-color: #e890ed;
+}
+.product__cart__wrap{
+  border-top: 1px solid #ddd;
+}
+.product__cart__count {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+}
+.cart__count__wrap{
+  margin-left: 1rem;
+  margin-bottom: 0;
+}
+.product__cart__btn {
+}
+.cart__btn{
+  width: 23rem;
+  height: 5rem;
+  border: none;
+  cursor: pointer;
+}
+.cart__btn__wishList__wrap {
+  display: flex;
+}
+.cart__btn__wishList {
+  margin-left: 0.5rem;
+}
+.wishList__text__link{
+  color:var(--text-color);
+}
+.wishList__text {
+}
+.product__meta {
+  margin-top: 2rem;
+}
+.product__meta li{
+  margin-bottom: 0.5rem;
+}
+.product__meta__lable{
+  margin-left: 0.5rem;
+  
+}
+.product__meta__link{
+color:#837b81;
+}
+.sku {
+}
+.category {
+}
+.tags {
+}
+.product__share {
+  margin-top: 1rem;
+  display: flex;
+}
+.product__share__lable{
+  margin-left: 0.5rem;
+}
+.social__icons__wrap {
+  display: flex;
+}
+.social__link a{
+  margin-left: 0;
+}
+.social__link{
+  margin-left: 1rem;
+}
+.product__description{
+
+}
+.description__list__title{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+
+}
+
+.list__title{
+margin-left: 3rem;
+
+}
+.list__title:last-child{
+  margin-left: 0;
+}
+.list__title__link{
+color: var(--text-color);
+font-size: 1.8rem;
+font-family: 'Samim bold';
+display: block;
+padding-bottom: 1rem;
+}
+.list__title__link:hover{
+  color: #e890ed;
+}
+.list__title__link--active{
+  color: #e890ed;
+  border-bottom: 2px solid #e890ed;
+}
+
+
+.description__content__wrap{
+  padding: 4rem 0;
+  border-bottom: 1px solid #ddd;
+}
+.content__desc{
+
+}
+.content__desc__text{
+line-height: 2;
+color: #837b81;
+}
+.content__desc__more{
+
+}
+.desc__more__table{
+
+}
+.desc__more__table tr{
+  border-bottom: 1px solid #ddd;
+}
+.desc__more__table tr:last-child{
+  border-bottom:none;
+}
+.desc__more__table td{
+  padding: 1.5rem 0;
+}
+.review{
+margin: 2rem 0;
+}
+.color__input{
+ visibility: hidden;
+ position: absolute;
+}
+.info__color__li{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.size__li{
+  position: relative;
+}
+.size__input{
+  position: absolute;
+  visibility: hidden;
+  
+}
+.review__title{
+font-family: 'Samim bold';
+font-size: 2rem;
+margin-bottom: 2rem;
+}
+.review__content__wrap{
+
+}
+.form__review__wrap{
+
+}
+.form__review__title{
+font-family: 'Samim bold';
+margin-bottom: 2rem;
+font-size: 1.8rem;
+}
+.form__review{
+
+}
+.star__rating{
+display: flex;
+}
+.star__rating__lable{
+  margin-left: 1rem;
+}
+.review__text{
+
+}
+.review__control{
+  width: 100%;
+  display: block;
+  padding: 1.5rem 1.2rem;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  font-family: 'Samim bold';
+}
+.form__btn{
+border: none;
+width: 10rem;
+font-size: 2.5rem;
+cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.star__rating span{
+  cursor: pointer;
+}
+
+.content{
+  display: none;
+}
+.show{
+  display: block;
+}
+
+.comments{
+margin-bottom: 6rem;
+margin-top: 6rem;
+}
+.comments__personal{
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #ddd;
+}
+.personal__icon{
+  
+}
+.prsonal__name{
+margin-top: 0.5rem;
+}
+.comments__text{
+
+}
+.text__inner{
+
+}
+
+.personal__pro{
+  
+}
+
+.swiper-wrapper{
+margin-bottom: 5rem;
+}
+
+.swiper-pagination-bullet{
+  width: 1.2rem !important;
+  height: 1.2rem !important;
+  border: 2px solid #e890ed;
+  background-color: #fff !important;
+  opacity: 1 !important;
+}
+.swiper-pagination-bullet-active{
+  background-color: #e890ed !important;
+}

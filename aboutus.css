@@ -1,0 +1,94 @@
+
+.alignItems{
+    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+.aboutus{
+    padding: 8rem 0;
+}
+.aboutus__img__wrap img{
+width: 100%;
+}
+
+.aboutus__desc{
+padding: 4rem 0;
+}
+.aboutus__title{
+    font-size: 2.5rem;
+    font-family: 'Samim bold';
+    margin-bottom: 1rem;
+}
+.aboutus__text{
+line-height: 2.8rem;
+}
+
+
+.choose{
+padding: 8rem 0;
+background-color: #F4F9FC;
+}
+.choose__text{
+    line-height: 2.8rem;
+    color: #837b81;
+}
+.choose__heading{
+
+}
+.choose__title{
+    font-family: 'Samim bold';
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.choose__box{
+    background-color: #fff;
+    padding: 3rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+}
+.choose__box__title{
+    font-family: 'Samim bold';
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+.choose__box__text{
+    color: #837b81;
+    line-height: 2.8rem;
+}
+
+.team{
+    padding: 8rem 0;
+}
+.team__heading{
+
+}
+.team__heading__title{
+    font-family: 'Samim bold';
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.team__desc{
+    line-height: 2.8rem;
+    color: #837b81;
+}
+.team__content{
+ text-align: center;
+}
+.team__content__name{
+font-family: 'Samim bold';
+font-size: 1.8rem;
+margin-bottom: 1rem;
+}
+.team__content__desc{
+    color: #837b81;
+}
+.team__img__wrap img{
+width: 100%;
+}
+.team__img{
+    max-width: 100%;
+}

@@ -1,0 +1,230 @@
+@import "reset.css";
+@import "grid.css";
+@import "fonts.css";
+
+:root {
+  --text-color: #292b2c;
+  --app-bg: #ffffff;
+  --section-bg: #f2f3f5;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Samim";
+  font-size: 1.6rem;
+  line-height: 1.5;
+  overflow-x: hidden;
+  color: var(--text-color);
+  direction: rtl;
+}
+
+a {
+  text-decoration: none;
+}
+
+.textAlign{
+  text-align: left;
+}
+.width{
+  width:100%
+}
+
+
+.justifyContent {
+  align-items: center;
+  justify-content: space-between;
+}
+.alignItems {
+  align-items: baseline;
+}
+.center{
+  justify-content: center;
+}
+.main {
+}
+.pages {
+  padding: 5rem 0;
+  background-color: #f7f8fb;
+    
+}
+.pages__title h1 {
+  font-size: 2.5rem;
+  font-family: "Samim bold";
+}
+.pages__wrapper__list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pages__list {
+  display: flex;
+  margin-left: 0.5rem;
+}
+
+.pages__list:last-child{
+    margin-left: 0;
+}
+.pages__list a {
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+}
+.pages__list--active a{
+    color: #6c757d;
+}
+.pages__list svg {
+    display: flex;
+    margin-right: 0.5rem;
+}
+.update__total{
+  margin-bottom: 4rem;
+}
+.tr{
+  border-top: 2px solid #dee2e6;
+  border-bottom: 2px solid #dee2e6;
+}
+.cart{
+padding: 8rem 0;
+}
+.cart__table{
+width: 100%;
+}
+.cart__wrap{
+
+}
+.cart__img{
+
+}
+.cart__image{
+  max-width: 8rem;
+}
+.cart__info{
+
+}
+.cart__title{
+color: var(--text-color);
+}
+.cart__caption{
+margin-top: 0.5rem;
+}
+.cart__price{
+font-family: 'Samim bold';
+font-size: 1.4rem;
+}
+.cart__count{
+display: flex;
+
+}
+.cart__count__plus,
+.cart__count__mines{
+width: 3.3rem;
+height: 3.3rem;
+border-radius: 50%;
+text-align: center;
+border: 0;
+font-size: 2rem;
+}
+.cart__count__input{
+  width: 5rem;
+  height: 3rem;
+  margin: 0 0.5rem;
+  text-align: center;
+  border: 1px solid #ddd;
+  background-color: transparent;
+  font-size: 1.5rem;
+}
+.cart__count__mines{
+
+}
+.cart__price__total{
+font-family: 'Samim bold';
+font-size: 1.4rem;
+}
+
+.cart__table__head{
+}
+.cart__table__th{
+  padding: 0.7rem;
+  border-top: 2px solid #dee2e6;
+ font-family: 'Samim bold';
+}
+
+table td{
+
+  padding: 2rem;
+  vertical-align: middle;
+  text-align: center;
+}
+.update__total__input{
+  border:1px solid #ced4da;
+  padding: 8px 20px;
+  height: 39px;
+}
+.update__total__button{
+  padding: 8px 20px;
+  font-size: 2rem;
+  border: 0px none;
+  cursor: pointer;
+  background-color: #343a40;
+  border-color: #343a40;
+  color: #fff;
+
+}
+.form__total__button{
+  padding: 8px 20px;
+  font-size: 2rem;
+}
+.cart__total__btn{
+
+
+}
+.cart__totals__table{
+  width: 100%;
+}
+
+.cart__totals{
+  margin-bottom: 4rem;
+  border: 1px solid #dee2e6;
+  padding: 2rem;
+}
+
+.cart__totals__heading{
+  margin: 1rem 0;
+  font-size: 1.8rem;
+  font-family: 'Samim bold';
+}
+.cart__totals__tr{
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #dee2e6;
+}
+
+.cart__empty__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.cart__empty{
+padding:6rem 0;
+}
+.cart__empty__title{
+margin: 3rem 0;
+font-size: 3rem;
+font-family: 'Samim bold';
+text-align: center;
+}
+.cart__empty__link{
+  padding: 8px 20px;
+  font-size: 2rem;
+  border: 0px none;
+  cursor: pointer;
+  background-color: #343a40;
+  border-color: #343a40;
+  color: #fff;
+}

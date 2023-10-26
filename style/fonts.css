@@ -1,0 +1,29 @@
+
+   
+
+@font-face {
+     font-family: 'Samim';
+     src: url('../fonts/samim-font-v2.0.1/Samim.eot');
+     src: url('../fonts/samim-font-v2.0.1/Samim.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/samim-font-v2.0.1/Samim.woff') format('woff'),
+          url('../fonts/samim-font-v2.0.1/Samim.ttf') format('truetype');
+     font-weight: normal;
+   }
+   
+   @font-face {
+     font-family: 'Samim bold';
+     src: url('../fonts/samim-font-v2.0.1/Samim-Bold.eot');
+     src: url('../fonts/samim-font-v2.0.1/Samim-Bold.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/samim-font-v2.0.1/Samim-Bold.woff') format('woff'),
+          url('../fonts/samim-font-v2.0.1/Samim-Bold.ttf') format('truetype');
+     font-weight: bold;
+   }
+
+   @font-face {
+     font-family: 'Samim digits';
+     src: url('../fonts/samim-font-v2.0.1/Farsi-Digits-Without-Latin/Samim-FD-WOL.eot');
+     src: url('../fonts/samim-font-v2.0.1/Farsi-Digits-Without-Latin/Samim-FD-WOL.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/samim-font-v2.0.1/Farsi-Digits-Without-Latin/Samim-FD-WOL.woff') format('woff'),
+          url('../fonts/samim-font-v2.0.1/Farsi-Digits-Without-Latin/Samim-FD-WOL.ttf') format('truetype');
+     font-weight: bold;
+   }

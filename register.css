@@ -1,0 +1,120 @@
+:root {
+    --text-color: #292b2c;
+    --app-bg: #ffffff;
+    --section-bg: #f2f3f5;
+  }
+
+
+
+
+.justifyContent{
+    align-items: center;
+    justify-content: center;
+}
+
+
+.register{
+padding: 8rem 0;
+}
+
+#register__form{
+padding-top: 3rem;
+}
+
+.register__wrapper{
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+    padding: 4rem;
+}
+.register__heading__wrapper{
+}
+.register__heading__wrapper h3{
+font-size: 2rem;
+font-family: 'Samim bold';
+}
+.form__title{
+    margin-bottom: 1rem;
+}
+.form__input__wrapper{
+margin-bottom: 2rem;
+}
+.form__control{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #e0e0e2;
+    border-radius: 10px;
+    outline: none;
+    padding-right: 1rem;
+    font-size: 1.4rem;
+    font-family: 'Samim';
+}
+.btn__register{
+    box-shadow: none;
+    border: none;
+    display: flex;
+    background-color: #e890ed;
+    height: 4.5rem;
+    color: white;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+.form__footer__text{
+    color: #B0A3AD;
+}
+.form__footer__link{
+color: var(--text-color);
+font-size: 1.6rem;
+}
+.form__footer__link__wrapper{
+    margin-top: 1rem;
+}
+.form__input__password{
+position: relative;
+}
+.toggle-password{
+position: absolute;
+top: 1rem;
+left: 1rem;
+}
+.toggle-re-password{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+.toggle-password i.fa-eye-slash{
+    display: none;
+}
+.toggle-re-password i.fa-eye-slash{
+    display: none;
+}
+.toggle-password.active i.fa-eye-slash{
+    display: inline;
+}
+.toggle-re-password.active i.fa-eye-slash{
+    display: inline;
+}
+.toggle-password.active i.fa-eye{
+   display: none;
+}
+.toggle-re-password.active i.fa-eye{
+    display: none;
+}
+.form__input__email{
+position: relative;
+}
+
+
+#un__error,
+#ul__error,
+#ue__error,
+#up__error,
+#urp__error{
+        color: rgb(218, 25, 25);
+        font-size: 1.4rem;
+        margin-top: 1rem;
+       display: none;
+}

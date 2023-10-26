@@ -1,0 +1,58 @@
+
+.alignItems{
+align-items: center;
+justify-content: center;
+}
+
+
+
+
+.contact__primary{
+    padding: 8rem 0;
+}
+
+
+.contact{
+    
+}
+.contact__box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+    padding: 40px 20px;
+    border-radius: 10px;
+    align-items: center;
+}
+.contact__icon{
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    border-radius: 50%;
+    border: 1px solid #E890ED;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3 ease-in-out;
+}
+
+.icon{
+
+}
+.contact__text{
+margin-top: 1.5rem;
+}
+.contact__title{
+margin-bottom: 1.5rem;
+font-size: 1.8rem;
+font-family: 'Samim bold';
+}
+.contact__content{
+
+    color: #837b81;
+
+}
+.contact__map{
+    max-width: 100%;
+}

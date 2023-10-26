@@ -1,0 +1,1140 @@
+@import "reset.css";
+@import "grid.css";
+@import "fonts.css";
+
+:root {
+  --text-color: #292b2c;
+  --app-bg: #ffffff;
+  --section-bg: #f2f3f5;
+}
+/*
+
+--helper-classes
+
+*/
+.justifyContent {
+  align-items: center;
+  justify-content: space-between;
+}
+.center {
+  align-items: center;
+  justify-content: center;
+}
+.margin > * {
+  margin-bottom: 0;
+}
+.margin__right {
+  margin-right: 0;
+  margin-left: 0;
+}
+/*
+  
+--reset styles
+
+*/
+a {
+  text-decoration: none;
+}
+
+/*
+
+---App
+
+*/
+
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Samim";
+  font-size: 1.6rem;
+  line-height: 1.5;
+  overflow-x: hidden;
+  color: var(--text-color);
+  direction: rtl;
+ 
+}
+.search__window{
+ 
+  position: fixed;
+  background-color: #fff;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product__scroll{
+  height: 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  display: none;
+}
+.product__scroll--active{
+  height: 50rem;
+  overflow-y: scroll;
+  display: block;
+}
+.product__scroll--empty{
+  height: auto;
+  overflow-y: hidden;
+  display: block;
+}
+.product__empty{
+  text-align: center;
+}
+.product__empty__text{
+  font-size: 2.5rem;
+  margin-top: 4rem;
+}
+.search__window--active{
+ 
+  opacity: 1;
+  z-index: 100;
+}
+.search__window--display{
+  align-items: flex-start;
+}
+.search__window--active .background__toggle__icon{
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+    left: 0;
+    top: 0;
+}
+/* .product__empty{
+  display: none;
+}
+.product__empty--active{
+  display: block;
+} */
+#form__search{
+  max-width: 100%;
+  position: relative;
+}
+#form__search__input{
+width: 100%;
+position: relative;
+height: 4.6rem;
+border: 1px solid #ddd;
+background-color: none;
+font-family: 'Samim';
+font-size: 1.5rem;
+padding: 0 2rem;
+}
+#form__search__btn{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border: none;
+  background-color: #595959;
+  width: 5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+/*
+
+--header
+
+*/
+
+.header {
+  box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 6%);
+  background-color: var(--app-bg);
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  left: 0;
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+.nav__links {
+  display: flex;
+  align-items: flex-end;
+}
+.nav__links-li {
+  display: flex;
+  position: relative;
+}
+.nav__links-shop {
+  position: relative;
+}
+.nav__links-shop:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav__link-icon {
+  margin-left: 2rem;
+}
+.shop-link {
+}
+.wrapper-shop-link__text {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background-color: #e890ed;
+  top: -6px;
+  right: -6px;
+}
+.shop-link__text {
+  display: block;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.shop-link__menu {
+  display: flex;
+  position: absolute;
+  top: 5rem;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  justify-content: center;
+  background-color: var(--app-bg);
+  transition: all 150ms ease-in;
+  opacity: 0;
+  z-index: 9;
+  visibility: hidden;
+  padding: 1rem 2rem;
+  left: 0;
+  width: 32rem;
+  padding: 1rem;
+}
+.nav__links-shop:hover .shop-link__menu {
+
+  visibility: visible;
+  opacity: 1;
+
+}
+
+
+.shop-link__menu__li {
+}
+.shop-link__menu__heading {
+
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
+}
+.menu__heading__title {
+  font-family: "Samim bold";
+  font-size: 1.8rem;
+}
+
+.shop-link__menu__empty {
+ display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+.menu__empty__title {
+  margin: 2rem 0;
+  font-family: 'Samim bold';
+}
+.menu__empty__link {
+  display: flex;
+  background-color: #e890ed;
+  height: 4rem;
+  color: white;
+  width: 13rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+.menu__li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+}
+.menu__li__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu__li__details span {
+  font-size: 1.4rem;
+}
+.menu__li__link {
+}
+.menu__li__img {
+  max-width: 8rem;
+  margin-left: 1.5rem;
+}
+.menu__li__title {
+  font-family: "Samim bold";
+  margin-bottom: 1.5rem;
+}
+.cart__count {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.cart__count__plus,
+.cart__count__mines {
+  width: 3.3rem;
+  height: 3.3rem;
+  border-radius: 50%;
+  text-align: center;
+  border: 0;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.cart__count__input {
+  width: 5rem;
+  height: 3rem;
+  margin: 0 0.5rem;
+  text-align: center;
+  border: 1px solid #ddd;
+  background-color: transparent;
+  font-size: 1.5rem;
+}
+.shop-link__menu__footer {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.menu__footer__wrapper__link {
+  display: none;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.menu__footer__link {
+  display: flex;
+  background-color: #e890ed;
+  height: 4rem;
+  color: white;
+  width: 13rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+.menu__footer__price {
+}
+.search-link {
+}
+.header-right {
+  display: flex;
+}
+.menu {
+  display: flex;
+}
+.menu__item {
+  margin-left: 3rem;
+  position: relative;
+}
+.shop-link__menu--show{
+
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu__item:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu__link {
+  display: flex;
+  color: var(--text-color);
+  font-family: "Samim";
+  font-size: 1.5rem;
+  align-items: center;
+  transition: color 200ms ease-in;
+}
+
+.menu__link:hover {
+  color: #e890ed;
+}
+
+.submenu {
+  display: flex;
+  position: absolute;
+  top: 5rem;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  justify-content: center;
+  background-color: var(--app-bg);
+  width: 15rem;
+  transition: all 150ms ease-in;
+  right: 0;
+  opacity: 0;
+  z-index: 9;
+  visibility: hidden;
+  padding: 1rem 2rem;
+}
+
+.submenu__li {
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+
+.submenu__li:first-child {
+  margin-top: 1rem;
+}
+.submenu__link {
+  color: var(--text-color);
+  transition: color 200ms ease-in;
+}
+.submenu__link:hover {
+  color: #e890ed;
+}
+
+.down-symbol {
+  display: flex;
+  margin-right: 5px;
+}
+
+.menu__link--active {
+}
+.nav__toggle-icon {
+  display: none;
+  margin-left: 2rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.nav__toggle-line {
+  position: relative;
+  transition: all 100ms ease-in;
+}
+.nav__toggle-line,
+.nav__toggle-line::before,
+.nav__toggle-line::after {
+  width: 2.2rem;
+  height: 0.2rem;
+  background-color: #b0a3ad;
+  border-radius: 2rem;
+}
+.nav__toggle-line::before,
+.nav__toggle-line::after {
+  display: block;
+  position: absolute;
+  content: "";
+  transition: all 150ms ease-in;
+}
+.nav__toggle-line::before {
+  bottom: 0.6rem;
+}
+.nav__toggle-line::after {
+  top: 0.6rem;
+}
+.nav__toggle-icon--open .nav__toggle-line::before {
+  transform: translateY(0.6rem) rotate(45deg);
+}
+.nav__toggle-icon--open .nav__toggle-line::after {
+  transform: translateY(-0.6rem) rotate(-45deg);
+}
+.nav__toggle-icon--open .nav__toggle-line {
+  background-color: transparent;
+}
+.nav__logo {
+}
+.app-logo {
+  width: 15rem;
+}
+
+/*
+
+--home
+
+*/
+
+.main {
+  padding-top: 8rem;
+}
+.home {
+  width: 100%;
+}
+.home__baner {
+  position: relative;
+  height: 500px;
+  display: flex;
+  background-image: url(../img/banner1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  transition: all 200ms ease-in;
+}
+.home__banner__content {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+}
+.home__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.home__des {
+  color: var(--text-color);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  transition: all 200ms ease-in-out;
+}
+.home__title {
+  font-family: "Samim bold";
+  color: var(--text-color);
+  font-size: 5.5rem;
+  margin-bottom: 2rem;
+  transition: all 200ms ease-in-out;
+}
+.home__wrapper__link {
+  display: flex;
+  background-color: #e890ed;
+  height: 4.5rem;
+  color: white;
+  width: 15rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.control__prev,
+.control__next {
+  display: flex;
+  width: 4rem;
+  background-color: #ffffff;
+  height: 4rem;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+.control__prev {
+  left: 1rem;
+}
+.control__next {
+  right: 1rem;
+}
+/*
+
+--Shop-
+
+*/
+.shop {
+  margin-top: 10rem;
+}
+
+.shop__banner,
+.collection__banner {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+.shop__banner:hover .shop__banner__img {
+  transform: scale(1.06);
+}
+.collection__banner:hover .collection__banner__img {
+  transform: scale(1.06);
+}
+.shop__banner__img,
+.collection__banner__img {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.shop__banner__info,
+.collection__banner__info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: flex-start;
+}
+.shop__title {
+  margin-bottom: 0.5rem;
+}
+.shop__title,
+.collection__title {
+  font-size: 3.2rem;
+  font-family: "Samim bold";
+}
+.shop__caption,
+.collection__caption {
+  font-size: 2rem;
+}
+.shop__link,
+.collection__link {
+  position: relative;
+  display: block;
+  color: var(--text-color);
+  font-size: 2rem;
+}
+.shop__link::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.3rem;
+  background-color: #e890ed;
+  bottom: 0.2rem;
+}
+.collection__banner {
+}
+.collection__banner__img {
+}
+.collection__banner__info {
+}
+.collection__caption {
+  margin-bottom: 0.5rem;
+}
+.collection__title {
+}
+.collection__link::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.3rem;
+  background-color: #e890ed;
+  bottom: 0.2rem;
+}
+
+/*
+
+--products-
+
+*/
+
+.products {
+  margin-top: 6rem;
+}
+.products__heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+.products__title {
+  font-family: "Samim bold";
+  font-size: 3rem;
+}
+.products__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+.wrapper__nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.products__nav__li {
+  display: flex;
+  margin-left: 3rem;
+}
+.products__nav__li:last-child {
+  margin-left: 0;
+}
+.products__nav__link {
+  color: var(--text-color);
+  font-size: 1.6rem;
+  font-family: "Samim bold";
+  transition: color 250ms ease-in-out;
+}
+.products__nav__link:hover {
+  color: #e890ed;
+}
+
+.products__nav__link--active {
+  color: #e890ed;
+}
+
+.products__container {
+}
+.product__item {
+  background-color: #fff;
+  position: relative;
+  transition: all 250ms ease-in-out;
+  box-shadow: 0 0 7px rgb(0 0 0 / 10%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product__wrapper__img {
+  position: relative;
+}
+.product__img__link{
+  cursor: pointer;
+}
+.product__img {
+  max-width: 100%;
+}
+.product__wrapper__img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: all 250ms ease-in-out;
+  opacity: 0;
+  z-index: 1;
+}
+.product__item:hover .product__wrapper__img::before {
+  opacity: 1;
+}
+.product__item:hover .product__link a {
+  opacity: 1;
+}
+.product__item:hover .product__rating {
+  display: none;
+}
+.product__item:hover .product__color__switch {
+  display: flex;
+}
+
+.product__action__box {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  right: 0;
+  z-index: 2;
+}
+.product__wrapper__links {
+  margin-right: 1rem;
+}
+.product__link {
+  margin-left: 1rem;
+
+  transition: all 200ms ease-in-out;
+}
+.product__link :hover {
+  background-color: #e890ed;
+}
+.product__link a {
+  background-color: var(--text-color);
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.product__info {
+  text-align: center;
+  padding: 1.5rem;
+}
+.product__title {
+}
+.product__title a {
+  color: #837b81;
+  font-size: 1.6rem;
+}
+.product__price {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  direction: ltr;
+}
+.price {
+  font-family: "Samim";
+  color: var(--text-color);
+  font-size: 1.7rem;
+  display: flex;
+}
+.price span {
+  font-family: "Samim digits";
+}
+.sale-off {
+}
+.product__rating {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product__color__switch {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.color__span {
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  border-radius: 100%;
+  background-color: #e890ed;
+  border: 2px solid var(--white-color);
+  margin-left: 0.8rem;
+}
+
+.color__span:last-child {
+  margin-left: 0;
+}
+
+.color__span--active {
+  position: relative;
+  display: flex;
+}
+.color__span--active::before {
+  position: absolute;
+  display: block;
+  content: "";
+  border: 2px solid #fff;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: -3px;
+  border-radius: 100%;
+  box-shadow: 0 0 5px rgb(0 0 0 / 50%);
+}
+
+/*
+
+--collection-
+
+*/
+
+.season {
+  background-color: #f4f9fc;
+  margin-top: 6rem;
+}
+.season__content {
+  display: flex;
+  flex-direction: column;
+}
+.season__banner {
+  text-align: center;
+  margin-top: -4rem;
+}
+.season__banner__img {
+  width: 100%;
+}
+.season__heading {
+  font-family: "Samim bold";
+  color: #e890ed;
+  display: block;
+  margin-bottom: 1rem;
+}
+.season__title {
+  font-family: "Samim bold";
+  font-size: 3rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+.season__caption {
+  font-family: "Samim bold";
+  color: var(--text-color);
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+/*
+
+--slider-
+
+*/
+
+.slider {
+  margin: 8rem 0;
+}
+.slider__heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem;
+}
+.slider__title {
+  font-size: 2.8rem;
+  color: var(--text-color);
+  font-family: "Samim bold";
+}
+.slider__products {
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 2.5rem !important;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--text-color) !important;
+}
+.swiper-slide {
+  display: flex;
+}
+
+/*
+
+--about-
+
+*/
+
+.about {
+  background-color: #fff1f1;
+  padding: 10rem 0;
+}
+.about__heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+.about__heading__title {
+  font-size: 2.5rem;
+  font-family: "Samim bold";
+}
+.about__content {
+  text-align: center;
+  position: relative;
+}
+.content__text {
+  margin-bottom: 2.5rem;
+}
+.author__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.author__img {
+  margin-left: 1.5rem;
+}
+.author__title {
+  font-family: "Samim";
+  font-size: 1.8rem;
+}
+.author__name {
+}
+.author__job {
+  color: #e890ed;
+  font-family: "Samim bold";
+}
+.control__about__prev,
+.control__about__next {
+  position: absolute;
+  bottom: 4px;
+  color: #222;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+.control__about__prev {
+  right: 0;
+  left: auto;
+}
+.control__about__next {
+  left: 0;
+  right: auto;
+}
+
+/*
+
+--service-
+
+*/
+
+.service {
+  padding: 8rem 0;
+}
+.service__box {
+  text-align: center;
+}
+.service__box__style {
+  border-left: 1px solid #ddd;
+}
+.box__icon {
+}
+.box__content {
+}
+.box__title {
+  margin: 1rem 0;
+  color: #292b2c;
+  font-family: "Samim bold";
+  font-size: 1.8rem;
+}
+.box__text {
+  color: #687188;
+}
+
+/*
+
+subscribe
+
+*/
+
+.subscribe {
+  background-color: #e890ed;
+  padding: 5rem 0;
+}
+.subscribe__heading {
+}
+.subscribe__heading__title {
+  font-family: "Samin bold";
+  font-size: 2.8rem;
+  color: #fff;
+}
+.subscribe__form {
+}
+.form {
+  position: relative;
+}
+.form__input {
+  border: 0px solid;
+  color: #000;
+  box-shadow: none;
+  height: 50px;
+  padding: 8px 15px;
+  width: 100%;
+  font-size: 2rem;
+}
+input:focus {
+  outline: none;
+}
+
+.form__button {
+  position: absolute;
+  background-color: #343a40;
+  border-color: #343a40;
+  color: #fff;
+  font-size: 2.5rem;
+  left: 0;
+  right: auto;
+  padding: 11px 35px;
+  border: 0px none;
+  cursor: pointer;
+}
+
+/*
+
+--footer-
+
+*/
+
+.footer {
+  background-color: #202325;
+  font-size: 1.5rem;
+  line-height: 2.5;
+  position: relative;
+}
+.footer__top {
+  padding: 8rem 0;
+}
+
+.footer__warpper__list {
+  margin-bottom: 3rem;
+}
+.footer__logo {
+}
+.footer__img {
+}
+.footer__text {
+  color: #fff;
+}
+.social__links {
+  display: flex;
+}
+.social__link a {
+  margin-left: 2rem;
+}
+
+.social__link:last-child {
+  margin-left: 0;
+}
+.footer__link {
+  display: flex;
+  align-items: center;
+}
+.footer__link a {
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+}
+.footer__link a:hover {
+  color: #e890ed;
+}
+.footer__link svg {
+  margin-left: 1rem;
+}
+.footer__list__title {
+  color: #fff;
+  margin-bottom: 2rem;
+  font-family: "Samim bold";
+  font-size: 1.6rem;
+}
+.footer__list__links {
+}
+.footer__bottom {
+  padding: 2rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer__bottom__content {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.footer__bottom__payment {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.footer__payment__link {
+  margin-left: 0.5rem;
+}
+.footer__payment__link a {
+  display: flex;
+}
+.scrollup {
+  position: fixed;
+  background-color: #fff;
+  bottom: 15px;
+  height: 40px;
+  right: 20px;
+  text-align: center;
+  width: 40px;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+.scrollup:hover {
+  background-color: #171717;
+}
+.table__responsive {
+  display: none;
+}

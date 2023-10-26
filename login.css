@@ -1,0 +1,30 @@
+.login {
+  padding: 8rem 0;
+}
+
+.login__wrapper {
+  box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+  padding: 4rem;
+}
+.login__heading__wrapper h3{
+    font-size: 2rem;
+    font-family: 'Samim bold';
+}
+#login__form {
+    padding: 3rem 0;
+}
+.btn__login{
+    box-shadow: none;
+    border: none;
+    display: flex;
+    background-color: #e890ed;
+    height: 4.5rem;
+    color: white;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
